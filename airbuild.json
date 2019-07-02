@@ -1,0 +1,31 @@
+{
+  "wants": ["libairwheel"],
+  "packages": {
+    "ck": {
+      "source": {
+        "type": "git",
+        "repository": "https://github.com/concurrencykit/ck",
+        "revision": "{ck-revision}"
+      },
+      "tool": "autotools"
+    },
+    "icu": {
+      "source": {
+        "type": "git",
+        "repository": "https://github.com/unicode-org/icu",
+        "revision": "{icu-revision}"
+      },
+      "tool": "autotools",
+      "where": "icu4c/source/"
+    },
+    "libairwheel": {
+      "wants": ["ck", "icu"],
+      "source": {
+        "type": "git",
+        "repository": "{libairwheel-source}",
+        "revision": "{libairwheel-revision}"
+      },
+      "tool": "cmake"
+    }
+  }
+}

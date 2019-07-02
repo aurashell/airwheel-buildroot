@@ -1,0 +1,6 @@
+{
+  "ck-revision": "0.7.0",
+  "icu-revision": "release-64-2",
+  "libairwheel-source": "{root}/libairwheel",
+  "libairwheel-revision": "master"
+}
